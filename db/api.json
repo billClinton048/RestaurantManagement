@@ -41,6 +41,18 @@
       "name": "neo",
       "password": "neo@123",
       "email": "neo@gmail.com"
+    },
+    {
+      "id": "c600",
+      "name": "Name",
+      "password": "Name123",
+      "email": "Name@gmail.com"
+    },
+    {
+      "id": "b329",
+      "name": "na",
+      "password": "na1232",
+      "email": "na@gmail.c"
     }
   ]
 }

@@ -1,18 +1,30 @@
 <template>
-    
-        <h1>
-            Hello user welcome to home page
-        </h1>
-
+  <HomeHeader />
+  <h1>
+    Hello {{ name }}! Welcome to the home page
+  </h1>
 </template>
 
-<script >
-export default{
-    
-}
+<script setup>
+import HomeHeader from './HomeHeader.vue';
+import { ref, onMounted } from 'vue';
+import router from '@/routers';
 
+const name = ref('');
+
+onMounted(() => {
+  const user = localStorage.getItem('user-info');
+  
+  if (!user) {
+    router.push({ name: 'SignIn' });
+  } else {
+    
+    const userInfo = JSON.parse(user);
+    name.value = userInfo.name; 
+  }
+});
 </script>
 
-<style lang="scss" scoped>
-
+<style  scoped>
+/* Add your styles here */
 </style>
