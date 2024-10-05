@@ -1,0 +1,46 @@
+{
+  "users": [
+    {
+      "id": "2c64",
+      "name": "Clinton",
+      "email": "clinton@gmail",
+      "password": "Abc@123"
+    },
+    {
+      "id": "01e5",
+      "name": "user",
+      "email": "user@gmail",
+      "password": "User@123"
+    },
+    {
+      "id": "de0f",
+      "email": "clintoh@gm.c",
+      "password": "abc@123",
+      "name": "clinton"
+    },
+    {
+      "id": "a7c6",
+      "name": "Manu",
+      "password": "Manu123",
+      "email": "Manu@gmail.com"
+    },
+    {
+      "id": "35ac",
+      "name": "Abdul",
+      "password": "Abdul@123",
+      "email": "Abdul@gmail.com"
+    },
+    {
+      "id": "c3bb",
+      "name": "George",
+      "password": "george123",
+      "email": "geo@g.com"
+    },
+    {
+      "id": "2d8b",
+      "name": "neo",
+      "password": "neo@123",
+      "email": "neo@gmail.com"
+    }
+  ]
+}
