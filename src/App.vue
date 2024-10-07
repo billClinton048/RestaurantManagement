@@ -27,7 +27,7 @@ body{
 .logo {
   width: 100px;
 }
-.signUp input, .login input {
+.signUp input, .login input, .add input {
   width: 300px;
   height: 40px;
   padding-left: 20px;
@@ -37,7 +37,7 @@ body{
   margin-left: auto;
   border: 1px solid skyblue;
 }
-.signUp button, .login button {
+.signUp button, .login button, .add button{
   width: 320px;
   height: 40px;
   border: 1px solid skyblue;
