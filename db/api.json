@@ -69,52 +69,22 @@
   ],
   "restaurant": [
     {
-      "id": "1",
-      "name": "Cake Cafewa",
-      "contact": "01111112",
-      "adress": "Fouth Flour"
-    },
-    {
-      "id": "3d1f",
-      "name": "KFC-Nakuru",
+      "name": "KFC-Naks",
       "adress": "Section 58",
-      "contact": "01111123"
+      "contact": "01111123",
+      "id": "3d1f"
     },
     {
-      "id": "d910",
       "name": "dssds",
-      "adress": "sdsdsd",
-      "contact": "1234"
-    },
-    {
-      "id": "86ac",
-      "name": "dssds",
-      "adress": "sdsdsd",
-      "contact": "1234"
-    },
-    {
-      "id": "30e2",
-      "name": "Bakery ",
       "adress": "Nakuru",
-      "contact": "1982982"
+      "contact": "1982982",
+      "id": "5e8d"
     },
     {
-      "id": "787d",
       "name": "[object Object]s",
-      "adress": "sdsdsd",
-      "contact": "1982982"
-    },
-    {
-      "id": "5e8d",
-      "name": "",
-      "adress": "",
-      "contact": ""
-    },
-    {
-      "id": "c74f",
-      "name": "",
-      "adress": "",
-      "contact": ""
+      "adress": "Nakuru",
+      "contact": "1234",
+      "id": "c74f"
     }
   ]
 }

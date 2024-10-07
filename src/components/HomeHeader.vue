@@ -2,7 +2,7 @@
     <div class="nav">
        <router-link to="/">Home</router-link>
        <router-link to="/add">Add Hotel</router-link>
-       <router-link to="/update">Update Hotel</router-link>
+       <!-- <router-link to="/update">Update Hotel</router-link> -->
        <a @click.prevent="logOut" href="#">Logout</a>
     </div>
 </template>

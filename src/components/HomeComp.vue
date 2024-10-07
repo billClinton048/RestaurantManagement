@@ -9,11 +9,17 @@
       <td>ID</td>
       <td>Name</td>
       <td>Adress</td>
+      <td>Update</td>
+      <td>
+        Delete
+      </td>
     </tr>
     <tr v-for="item in restaurant_data" :key="item.id">
       <td>{{ item.id}}</td>
       <td>{{ item.name }}</td>
       <td>{{ item.contact }}</td>
+      <td><router-link :to="'/update/'+item.id">Update</router-link></td>
+      <td><button v-on:click="deleteRestaurant(item.id)">Delete</button></td>
     </tr>
   </table>
 </template>
@@ -21,7 +27,7 @@
 <script setup>
 import HomeHeader from './HomeHeader.vue';
 import { ref, onMounted } from 'vue';
-import router from '@/routers';
+import { router}from '@/routers';
 import axios from 'axios';
 
 // Declaring reactive variables
@@ -48,6 +54,15 @@ onMounted(async () => {
     console.error("Error fetching restaurant data:", error);
   }
 });
+const deleteRestaurant = async (id) => {
+  let restaurant = await axios.delete("http://localhost:3000/restaurant/"+id);
+  console.warn(restaurant)
+  if(restaurant.status ==200 ){
+    window.location.reload()
+
+  }
+
+}
 </script>
 
 <style scoped>
