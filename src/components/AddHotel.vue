@@ -12,8 +12,8 @@
     <input
       type="text"
       name="adress"
-      placeholder="Enter adress.."
-      v-model="restaurant.adress"
+      placeholder="Enter address.."
+      v-model="restaurant.address"
     />
     <input
       type="text"
@@ -33,7 +33,7 @@ import axios from 'axios';
 const restaurant = {
      name : "",
      contact : "",
-    adress :  ""
+    address :  ""
 }
 
 
@@ -49,7 +49,7 @@ const addRestaurant = async () => {
   console.warn(restaurant) 
   const result = await axios.post("http://localhost:3000/restaurant" ,{
     name: restaurant.name,
-    adress : restaurant.adress,
+    address : restaurant.address,
     contact :restaurant.contact
   })
   if(result.status == 201){

@@ -11,9 +11,9 @@
     />
     <input
       type="text"
-      name="adress"
+      name="address"
       placeholder="Enter adress.."
-      v-model="restaurant.adress"
+      v-model="restaurant.address"
     />
     <input
       type="text"
@@ -37,7 +37,7 @@ const route = useRoute()
 let restaurant = ref({
   name: "",
   contact: "",
-  adress: "",
+  address: "",
 });
 
 onMounted( async () => {
@@ -54,7 +54,7 @@ const updateRestaurant = async () => {
   console.warn(restaurant) 
   const result = await axios.put("http://localhost:3000/restaurant/"+ route.params.id ,{
     name: restaurant.value.name,
-    adress : restaurant.value.adress,
+    address : restaurant.value.address,
     contact :restaurant.value.contact
   })
   if(result.status == 200){

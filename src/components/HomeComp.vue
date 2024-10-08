@@ -8,18 +8,16 @@
     <tr>
       <td>ID</td>
       <td>Name</td>
-      <td>Adress</td>
+      <td>Address</td> 
       <td>Update</td>
-      <td>
-        Delete
-      </td>
+      <td>Delete</td>
     </tr>
     <tr v-for="item in restaurant_data" :key="item.id">
-      <td>{{ item.id}}</td>
+      <td>{{ item.id }}</td>
       <td>{{ item.name }}</td>
-      <td>{{ item.contact }}</td>
+      <td>{{ item.address }}</td> <!-- Correctly display address field -->
       <td><router-link :to="'/update/'+item.id">Update</router-link></td>
-      <td><button v-on:click="deleteRestaurant(item.id)">Delete</button></td>
+      <td><button @click="deleteRestaurant(item.id)">Delete</button></td>
     </tr>
   </table>
 </template>
@@ -27,12 +25,13 @@
 <script setup>
 import HomeHeader from './HomeHeader.vue';
 import { ref, onMounted } from 'vue';
-import { router}from '@/routers';
+import { useRouter } from 'vue-router'; // Use useRouter instead of direct router import
 import axios from 'axios';
 
 // Declaring reactive variables
 const name = ref('');
 const restaurant_data = ref([]); // Make this reactive
+const router = useRouter(); // Get router instance
 
 onMounted(async () => {
   const user = localStorage.getItem('user-info');
@@ -54,23 +53,30 @@ onMounted(async () => {
     console.error("Error fetching restaurant data:", error);
   }
 });
+
+// Delete restaurant function
 const deleteRestaurant = async (id) => {
-  let restaurant = await axios.delete("http://localhost:3000/restaurant/"+id);
-  console.warn(restaurant)
-  if(restaurant.status ==200 ){
-    window.location.reload()
-
+  try {
+    let response = await axios.delete(`http://localhost:3000/restaurant/${id}`);
+    if (response.status === 200) {
+      // Remove the deleted item from the restaurant_data array
+      restaurant_data.value = restaurant_data.value.filter(item => item.id !== id);
+      alert('Restaurant deleted successfully');
+    }
+  } catch (error) {
+    console.error("Error deleting restaurant:", error);
+    alert('Failed to delete restaurant');
   }
-
 }
 </script>
 
 <style scoped>
-table{
+table {
   margin-left: auto;
   margin-right: auto;
 }
-td{
+
+td {
   padding: 2px;
   width: 200px;
   height: 30px;

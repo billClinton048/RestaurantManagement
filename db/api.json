@@ -65,26 +65,44 @@
       "name": "Eva",
       "password": "Eva123",
       "email": "eva@gmail.com"
+    },
+    {
+      "id": "3d2d",
+      "name": "Claire",
+      "password": "Clare123",
+      "email": "claire@gmail.com"
+    },
+    {
+      "id": "1d71",
+      "name": "Faith",
+      "password": "Faith123",
+      "email": "faith@gmail.com"
     }
   ],
   "restaurant": [
     {
       "name": "KFC-Naks",
-      "adress": "Section 58",
+      "address": "naks@gmail.com",
       "contact": "01111123",
       "id": "3d1f"
     },
     {
-      "name": "dssds",
-      "adress": "Nakuru",
-      "contact": "1982982",
-      "id": "5e8d"
+      "name": "Galitos-naks",
+      "address": "naks@gmail.com",
+      "contact": "01123244",
+      "id": "8724"
     },
     {
-      "name": "[object Object]s",
-      "adress": "Nakuru",
-      "contact": "1234",
-      "id": "c74f"
+      "name": "Bakery One",
+      "address": "bakery_nakuru",
+      "contact": "1982982",
+      "id": "d0fd"
+    },
+    {
+      "id": "f45e",
+      "name": "KFC-Naks",
+      "address": "Kfc_Nakuru",
+      "contact": "0119188374"
     }
   ]
 }
