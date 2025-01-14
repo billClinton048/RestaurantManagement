@@ -81,13 +81,7 @@
   ],
   "restaurant": [
     {
-      "name": "KFC-Naks",
-      "address": "naks@gmail.com",
-      "contact": "01111123",
-      "id": "3d1f"
-    },
-    {
-      "name": "Galitos-naks",
+      "name": "Galitos-nakuru",
       "address": "naks@gmail.com",
       "contact": "01123244",
       "id": "8724"
@@ -99,10 +93,28 @@
       "id": "d0fd"
     },
     {
-      "id": "f45e",
-      "name": "KFC-Naks",
-      "address": "Kfc_Nakuru",
-      "contact": "0119188374"
+      "id": "0cbd",
+      "name": "Kempnski",
+      "address": "Kempnski@gmail.com",
+      "contact": "0010001001"
+    },
+    {
+      "id": "63cb",
+      "name": "Brimak",
+      "address": "Brimar@gmail.com",
+      "contact": "0010001022"
+    },
+    {
+      "name": "KFC-Nakuru",
+      "address": "kfc@gmail.com",
+      "contact": "01111123",
+      "id": "f5fc"
+    },
+    {
+      "id": "3d88",
+      "name": "KFC-NakTown",
+      "address": "kfc@westside",
+      "contact": "01111123"
     }
   ]
 }

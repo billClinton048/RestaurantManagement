@@ -9,6 +9,8 @@
     <p>
       <router-link to="/login">Login</router-link>
     </p>
+
+    <p>Name: {{ name }}</p>
   </form>
 </template>
 
